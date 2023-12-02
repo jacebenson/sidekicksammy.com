@@ -1,3 +1,4 @@
+import fetch from 'cross-fetch'
 import { getContactBySidekickTitle, mapHubspotContactToContact } from "./hubspot";
 export let getFixieChunks = async ({message, sideKickTitle}) => {
   // the way this works, is we need the fixie, corpus id;
