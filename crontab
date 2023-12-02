@@ -1,0 +1,12 @@
+# every minute fetch the test page
+# http://localhost:8910/.redwood/test
+# and echo the result
+#* * * * * curl -s https://sks.fly.dev/.redwood/functions/test
+
+# every 30th minute fetch the test page
+# http://localhost:8910/.redwood/test
+# and echo the result
+#30 * * * * curl -s https://sks.fly.dev/.redwood/functions/test
+
+# every munute run yarn rw exec hello
+* * * * * yarn rw exec hello
