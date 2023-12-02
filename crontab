@@ -6,7 +6,7 @@
 # every 30th minute fetch the test page
 # http://localhost:8910/.redwood/test
 # and echo the result
-#30 * * * * curl -s https://sks.fly.dev/.redwood/functions/test
+45 * * * * curl -s https://sks.fly.dev/.redwood/functions/refreshFixieCorpuses
 
-# every munute run yarn rw exec hello
-* * * * * yarn rw exec hello
+# every munute run yarn rw exec hello # does not work
+#* * * * * yarn rw exec hello

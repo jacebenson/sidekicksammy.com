@@ -32,6 +32,8 @@ FROM dependencies as api_build
 COPY api api
 RUN yarn rw build api
 
+# COPY scripts scripts
+
 FROM dependencies
 
 ENV NODE_ENV production
